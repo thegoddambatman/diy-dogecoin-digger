@@ -10,7 +10,7 @@ This is very much a work in progress. Do not use for any reason until this messa
 
 This project is intended to get users up and running on a CPU miner in as fast, secure, and friendly way possible. That means providing pre-configured installers that can be automatically run from the command line with as little fuss as possible -- it'll be ideal for unattended installs where you go from zero to p2p pool hashing. It also means validating all the provided binaries and scripts with md5sums and keeping everything on SSL for download and install. Finally, it also means preconfiguring a niceness level that people's CPUs don't spike, heat doesn't go crazy, and the fans start burning out. Because that would be mean.
 
-## TL;DR (**T**o **L**ong, **D**ig al**R**eady!)
+## TL;DR: [T]o [L]ong, [D]ig al[R]eady!
 
 You don't care about details. I respect that. Here's what you need to do to start digging some Dogecoin today:
 
