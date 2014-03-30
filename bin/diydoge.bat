@@ -25,8 +25,8 @@ echo [*] Using %curl_cmd% to fetch binaries...
 %curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-win32.zip"
 %curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf"
 
-REM Even though we test for 64-bit, it just matters for file installation.
-REM We're not actually using 64-bit for anything in this version. TODO.
+REM Even though we test for 64-bit, it just matters for file paths.
+REM We're not actually using 64-bit for anything. TODO.
 
 if exist "%ProgramFiles(x86)%" goto :64bit
 echo [*] 32-bit system detected...
@@ -39,12 +39,11 @@ echo [*] Installing 7-Bit....
 :unzip_cpuminer
 echo [*] Unzipping cpuminer...
 "%ProgramFiles%\7-zip\7z.exe" e -y pooler-cpuminer-2.3.3-win32.zip
-goto :startminer
+goto :start_miner
 
 :64bit
 
 echo [*] 64-bit detected...
-
 
 :test_for_7z_64
 if exist "%ProgramFiles%\7-zip\7z.exe" goto :unzip_cpuminer_64
@@ -58,7 +57,7 @@ echo [*] Installing 7-Bit....
 echo [*] Unzipping cpuminer...
 "%ProgramFiles(x86)%\7-zip\7z.exe" e -y pooler-cpuminer-2.3.3-win32.zip
 
-:startminer
+:start_miner
 echo [*] All right, let's get mining!
 minerd -c p2p.conf
 goto :end
