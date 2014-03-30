@@ -1,6 +1,6 @@
 # DÐD Bins
 
-This is where the binaries live. Don't fret, they're small.
+This is where the binaries live. Don't fret, they're small and harmless.
 
 ## Pooler's CPUMiner
 
@@ -8,11 +8,12 @@ The guts of DDD is @pooler's CPU miner (aka, `minerd`), pulled from
 [SourceForge](http://sourceforge.net/projects/cpuminer/files/) .
 
 Source and license is available [at his repo](github.com/pooler/cpuminer). While the below md5sums were verified
-by me, feel free to compile yourself -- especially if you're running a funny operating system.
+by me, feel free to compile yourself -- especially if you're running a
+funny operating system.
 
-In the future, I'll be doing that. For now, we'll trut that SourceForge hasn't monkeyed with them and dropped
-in backdoors or anything. Also, I'll get to work on binaries for funny OSes like like Raspbian (for the
-Raspberry Pi) and Android (for my graveyard of crappy Android phones).
+In the future, I'll be doing all the compiling so *I* know everything's
+cool. For now, though, we'll trut that SourceForge hasn't monkeyed with
+these binaries in sneaky ways. 
 
 cpuminer bundle                            | build date | md5 cryptographic checksum
 -------------------------------------------|------------|---------------------------------- 
@@ -23,11 +24,20 @@ pooler-cpuminer-2.3.3-win32.zip            | 2014-02-27 | 2d6a55b468d3cda2c16a6a
 pooler-cpuminer-2.3.3-osx64.zip            | 2014-03-10 | f38c7504097c6b38e8a85ea99fc1bc13
 pooler-cpuminer-2.3.3.tar.gz               | 2014-02-27 | 3464ac9faca77c830105543fbc96b2d9
 
-## Installers
-
-Coming soon! That's half the point of this project after all.
+This list is far from complete, of course -- getting builds together for
+more exotic hardware that you might have lying around not digging for
+Dogecoin is a priority around here.
 
 ## Helper applications
 
-Some operating systems don't provide helpful tools like md5sum checkers, command-line downloaders, and the like.
-Those will go here as well.
+Some operating systems don't provide helpful tools like command-line downloaders, unarchivers, and the like.
+
+Application  | binary installer                 | source           | md5 checksum
+-------------|----------------------------------|------------------|----------------------------------
+7-Zip        | 7z920.msi                        | [ConfusedByCode](http://www.confusedbycode.com/curl/) | 9bd44a22bffe0e4e0b71b8b4cf3a80e2 
+cURL         | curl-7.35.0-win32-local-fix1.msi | [SourceForge](http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/) | 6d343ae45ba615e3604a7ca812e4c274
+
+Give me a few hours and I'll stick some VirusTotal result links here to
+help show we're all on the up-and-up. Or, maybe I'm some superhacker
+with secret 0day. Shrug. You never know, it could go either way.
+
