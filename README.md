@@ -66,7 +66,7 @@ to my Dogecoin address. While this seems like a perfectly reasonable
 default to me, you might not be so generous. You can keep your earnings
 by editing the `p2p.conf` file first. Here's that procedure:
 
-````bash
+````
 \curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/bin/diydoge.sh
 \curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
 sed -i s/DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g/YOUR-DOGECOIN-WALLET-ADDRESS/ p2p.conf
