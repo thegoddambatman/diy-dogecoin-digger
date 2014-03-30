@@ -40,10 +40,6 @@ TODO: Download a thing, then run a thing. An installer or even better, just a ba
 
 TODO: Terminal, then curl to bash. Homebrew style. Might need a brew tap, better would be a shell script.
 
-### Linux
-
-TODO: curl to bash.
-
 ## Details
 
 Talk about /u/GoodShibe's post about defending dogecoins. Appeal to volunteerism. Admit that CPU mining is tiny but hey it's a little something, and a whole bunch of little somethings can lead to a big something.
