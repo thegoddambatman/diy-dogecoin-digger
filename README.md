@@ -15,6 +15,16 @@ This project is intended to get users up and running on a CPU miner in as fast, 
 You don't care about details. I respect that. Here's what you need to do to start digging some Dogecoin today:
 
 If you don't have a Dogecoin wallet yet, then fetch the [MultiDoge](http://multidoge.org/) wallet. It's easy and fun.
+### Linux
+
+The Linux version requires curl, and currently assumes Intel-based 64-bit or 32-bit. ARM coming soon!
+
+
+````
+\curl -sSL | http://ur1.ca/gxypf
+````
+
+This will get you started right away, but you'll be mining to my Dogecoin address. This is fixable by editing the `p2p.conf` file that just appeared, and start `./minerd -c p2p.conf` again and you'll be good to go. No, this is not a great solution but this is all proof-of-concept at the moment.
 
 ### Windows
 
