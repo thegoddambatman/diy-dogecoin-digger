@@ -16,12 +16,12 @@ Raspberry Pi) and Android (for my graveyard of crappy Android phones).
 
 cpuminer bundle                            | build date | md5 cryptographic checksum
 -------------------------------------------|------------|---------------------------------- 
-pooler-cpuminer-2.3.3-osx64.zip            | 2014-03-10 |
-pooler-cpuminer-2.3.3.tar.gz               | 2014-02-27 |
-pooler-cpuminer-2.3.3-win64.zip            | 2014-02-27 |
-pooler-cpuminer-2.3.3-win32.zip            | 2014-02-27 |
-pooler-cpuminer-2.3.3-linux-x86_64.tar.gz  | 2014-02-27 |
-pooler-cpuminer-2.3.3-linux-x86.tar.gz     | 2014-02-27 |
+pooler-cpuminer-2.3.3-linux-x86_64.tar.gz  | 2014-02-27 | 37f2d274b8281ed8d87dffb80db4a15a
+pooler-cpuminer-2.3.3-linux-x86.tar.gz     | 2014-02-27 | 8479a43fa58d5a839d37c7a844c5d693
+pooler-cpuminer-2.3.3-win64.zip            | 2014-02-27 | d4b088779b02373382b6017cf47db121
+pooler-cpuminer-2.3.3-win32.zip            | 2014-02-27 | 2d6a55b468d3cda2c16a6a6da879fa21
+pooler-cpuminer-2.3.3-osx64.zip            | 2014-03-10 | f38c7504097c6b38e8a85ea99fc1bc13
+pooler-cpuminer-2.3.3.tar.gz               | 2014-02-27 | 3464ac9faca77c830105543fbc96b2d9
 
 ## Installers
 
