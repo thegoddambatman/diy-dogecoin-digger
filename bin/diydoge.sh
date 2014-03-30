@@ -17,13 +17,13 @@ fi
 # bootstrap. Right now they get to do it twice I guess, or fork from
 # GitHub or something.
 echo [*] Fetching binary CPU miner
-curl -sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
+curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
 
 if [ -e $PWD/p2p.con ]; then
   echo [*] Using existing p2p.conf
 else
   echo [*] Fetching p2p.conf
-  curl -sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
+  curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
 fi
 
 # TODO: Check the md5sum of the downloaded file binary
