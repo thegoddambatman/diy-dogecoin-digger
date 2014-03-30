@@ -27,6 +27,8 @@ help protect the Dogecoin network, right now:
 
 ### Step One: Get a Wallet
 
+![Multidoge](http://i.imgur.com/SdFtBtgs.png)
+
 If you don't have a Dogecoin wallet yet, then fetch the
 [MultiDoge](http://multidoge.org/) wallet. It's easy and fun,
 cross-platform, and you don't have to wait for days for the network to
