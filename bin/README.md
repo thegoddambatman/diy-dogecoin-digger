@@ -31,7 +31,3 @@ Coming soon! That's half the point of this project after all.
 
 Some operating systems don't provide helpful tools like md5sum checkers, command-line downloaders, and the like.
 Those will go here as well.
-
-## Configuration
-
-The default configuration file used by the installers to get you diggin' up some Dogecoin.
