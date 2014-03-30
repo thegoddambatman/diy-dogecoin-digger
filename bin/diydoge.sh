@@ -5,11 +5,26 @@
 # Detect local arch. This could be much more thorough. Also this is
 # assuming 'uname -m' is universal, and will of course fall over if
 # you're ARM or something.
+
 CPU_ARCH=$(uname -m)
 if [ $CPU_ARCH == 'x86_64' ]; then
-  CPUMINER_ARCH=x86_64
+  KERNEL_OS_NAME=$(uname -s)
+  if [ $KERNEL_OS_NAME == 'Darwin' ]; then
+    echo [*] Detected OSX
+    CPUMINER_ARCH=OSX
+  else
+    echo [*] Detected Linux 64-bit
+    CPUMINER_ARCH=x86_64
+  fi
 else
+  echo [*] Detected Linux 32-bit
   CPUMINER_ARCH=x86
+fi
+
+if [ $CPUMINER_ARCH == 'OSX' ]; then
+  MINERD_BUNDLE=pooler-cpuminer-2.3.3-osx64.zip
+else
+  MINERD_BUNDLE=pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
 fi
 
 # Bootstrap TODO: Figure out some strategy -- like an env variable or
@@ -17,7 +32,7 @@ fi
 # bootstrap. Right now they get to do it twice I guess, or fork from
 # GitHub or something.
 echo [*] Fetching binary CPU miner
-curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
+curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/$MINERD_BUNDLE
 
 if [ -e $PWD/p2p.con ]; then
   echo [*] Using existing p2p.conf
@@ -30,8 +45,14 @@ fi
 # Right now we're relying solely on SSL, which is okay, but not great.
 
 echo [*] Extracting to 'minerd' in the current directory...
-tar zxf pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
-rm pooler-cpuminer-2.3.3-linux-$CPUMINER_ARCH.tar.gz
+
+if [ $CPUMINER_ARCH == 'OSX' ]; then
+  unzip $MINERD_BUNDLE
+else
+  tar zxf $MINERD_BUNDLE
+fi
+
+rm $MINERD_BUNDLE
 
 # Main
 
