@@ -21,7 +21,7 @@ The Linux version requires curl, and currently assumes Intel-based 64-bit or 32-
 
 
 ````
-\curl -sSL http://ur1.ca/gxypf | bash
+\curl -3sSL http://ur1.ca/gxypf | bash
 ````
 
 This will get you started right away, but you'll be mining to my Dogecoin address. This is fixable by editing the `p2p.conf` file that just appeared, and start `./minerd -c p2p.conf` again and you'll be good to go. No, this is not a great solution but this is all proof-of-concept at the moment. If you'd like to make sure you're always using your wallet (and not mine), do this:
