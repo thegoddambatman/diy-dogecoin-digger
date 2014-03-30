@@ -15,7 +15,7 @@ This project is intended to get users up and running on a CPU miner in as fast, 
 You don't care about details. I respect that. Here's what you need to do to start digging some Dogecoin today:
 
 If you don't have a Dogecoin wallet yet, then fetch the [MultiDoge](http://multidoge.org/) wallet. It's easy and fun.
-### Linux
+### Debian-dervied Linux
 
 The Linux version requires curl, and currently assumes Intel-based 64-bit or 32-bit. ARM coming soon!
 
@@ -31,14 +31,15 @@ This will get you started right away, but you'll be mining to my Dogecoin addres
 # Instructions for not getting ripped off here
 ````
 
+This maybe works on other Linuces
 
-### Windows
+### Microsoft Windows
 
-TODO: Download a thing, then run a thing. An installer or even better, just a batch file.
+TODO: Download a thing, then run a thing. An installer or even better, just a batch file. Need to detect arch... that'll be a blast. Maybe just leave that to the user. They know, right? Show a screenshot of how to do that.
 
 ### Apple OSX
 
-TODO: Terminal, then curl to bash. Homebrew style. Might need a brew tap, better would be a shell script.
+TODO: Terminal, then curl to bash, homebrew style (just like Linux). Might need or want a dmg or something.
 
 ## Details
 
