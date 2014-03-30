@@ -84,7 +84,11 @@ be fun.
 
 ## DÐD on Microsoft Windows
 
-This is the next TODO.
+![Windows](http://i.imgur.com/CVDmPUk.jpg)
+
+The `diydoge.bat` file over in [/bin](/bin) is in double-secret pre-alpha, but does seem to work pretty okay. You need to either have already installed curl and have it available in your path, or download the curl installer also in /bin and have that in the same directory as `diydoge.bat`.
+
+Clearer instructions coming soon.
 
 # The Longer Story
 
