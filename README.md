@@ -52,7 +52,7 @@ The Linux and OSX version of the bootstrap script, `diydoge.sh`,
 requires curl, and currently assumes an Intel-based 64-bit for OSX or
 Linux, or 32-bit Linux.
 
-All macbooks manufactured since late 2006 have 64-bit CPUs, but if
+All MacBooks manufactured since late 2006 have 64-bit CPUs, but if
 you're not sure about yours, [here's how to tell](http://support.apple.com/kb/HT3696).
 
 ````
@@ -79,7 +79,7 @@ Just copy and paste that into your terminal window.
 
 This probably works on other Linuces. Let's keep a list of tested
 operating systems on the
-[wiki](https://github.com/thegoddambatman/diy-doge-digger/wiki)! That'll
+[wiki](https://github.com/thegoddambatman/diy-dogecoin-digger/wiki/_pages)! That'll
 be fun.
 
 ## DÐD on Microsoft Windows
@@ -119,7 +119,8 @@ totally unqualified to talk about that right now, though.
 
 XXX: Here's where I talk about open source projects that are one-man
 shows rarely last, and there are way smarter people than me about this
-sort of stuff. Also, talk up the wiki.
+sort of stuff. Also, talk up the
+[wiki](https://github.com/thegoddambatman/diy-dogecoin-digger/wiki/_pages).
 
 # Tipjar
 
