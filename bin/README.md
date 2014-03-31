@@ -26,7 +26,7 @@ them in. I suggest excepting something obvious like "C:\Users\name\ddd"
 or somesuch.
 
 
-cpuminer bundle                            | build date | md5 cryptographic checksum       | VirusTotal
+cpuminer bundle                            | build date | md5 checksum                     | VirusTotal
 -------------------------------------------|------------|----------------------------------|--------------------------------
 pooler-cpuminer-2.3.3-linux-x86_64.tar.gz  | 2014-02-27 | 37f2d274b8281ed8d87dffb80db4a15a | [VT](https://www.virustotal.com/en/file/5222c2178402ca94d59c9884bcea5d449120a1a10116eca5e50d1b90688bd0af/analysis/1396237908/)
 pooler-cpuminer-2.3.3-linux-x86.tar.gz     | 2014-02-27 | 8479a43fa58d5a839d37c7a844c5d693 | [VT](https://www.virustotal.com/en/file/b9ea3ae108786a4ad7031d7736a9f78463e00ff9f13927e2e8b18d2fcc9acab6/analysis/1396237876/)
