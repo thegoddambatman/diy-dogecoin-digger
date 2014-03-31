@@ -248,5 +248,6 @@ Of course, it's not a proper cryptocurrency project unless you leave out a tip j
 
 [DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g](http://dogechain.info/address/DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g)
 
-You'll note it's the same as the default address in these one-line installers. You
-can check to see how this whole plot is working out on [doge.st](http://doge.st/serverstats#DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g).
+You'll note it's the same as the default address in these one-line installers. If people really are
+falling for the default wallet address trick, you can keep tabs on my apparent hashrate on [doge.st](http://doge.st/serverstats#DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g). I promise to fix that, by
+the way. I just don't have a good way to do it yet.
