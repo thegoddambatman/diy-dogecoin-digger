@@ -108,9 +108,9 @@ curl -3sSL https://bit.ly/ddd-w32 -o ddd.bat && ddd.bat
 ````
 
 Someday, we'll have a nice one-click experince for our Microshibe friends. Also,
-since it's Windows, 32-bit will work for 64-bit, so don't worry about that;
-there's an [issue](https://github.com/thegoddambatman/diy-dogecoin-digger/issue) open
-to address that soon.
+since it's Windows, 32-bit will work for 64-bit, so don't worry about that, it'll
+still work. That said, there's an [issue](https://github.com/thegoddambatman/diy-dogecoin-digger/issue)
+open to address this.
 
 #### Avoiding me ripping you off (Windows)
 
