@@ -37,7 +37,7 @@ Application  | binary installer                 | source           | md5 checksu
 7-Zip        | 7z920.msi                        | [ConfusedByCode](http://www.confusedbycode.com/curl/) | 9bd44a22bffe0e4e0b71b8b4cf3a80e2 
 cURL         | curl-7.35.0-win32-local-fix1.msi | [SourceForge](http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/) | 6d343ae45ba615e3604a7ca812e4c274
 
-Give me a few hours and I'll stick some VirusTotal result links here to
-help show we're all on the up-and-up. Or, maybe I'm some superhacker
-with secret 0day. Shrug. You never know, it could go either way.
+7-Zip is distributed under the 7-Zip License, here: http://7-zip.org/license.txt, and source is available at http://7-zip.org
+
+cURL is distributed under a derivative of the MIT license, here: http://curl.haxx.se/docs/copyright.html, and source is available at http://curl.haxx.se.
 
