@@ -15,7 +15,7 @@ SSL for download and install.
 
 Mass CPU mining is important to the future of Dogecoin, if you can spare
 the cycles and electrons. If you're interested in some of the reasons,
-feel free to read on. Otherwise...
+feel free to read on or [skip ahead](https://github.com/thegoddambatman/diy-dogecoin-digger#the-longer-story). Otherwise...
 
 ## TL;DR!
 
@@ -136,7 +136,7 @@ Now you're off to the races:
 ddd.bat
 ````
 
-# The Longer Story
+# The Long and Kind of Boring Story
 
 So if you've read this far, you may be wondering why I want loads and
 loads of people to start mining on their low-end, non-optimized, barely
