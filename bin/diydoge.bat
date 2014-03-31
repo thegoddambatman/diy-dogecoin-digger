@@ -5,7 +5,7 @@ echo [*] Starting DDD Bootstrap...
 REM Need to start fresh because this is also our curl location tester.
 REM This will be important when we locally verify md5sums anyway.
 
-del /F pooler-cpuminer-2.3.3-win32.zip
+if exist pooler-cpuminer-2.3.3-win32.zip del /F pooler-cpuminer-2.3.3-win32.zip
 
 set curl_cmd="curl"
 
