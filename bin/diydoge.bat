@@ -1,10 +1,17 @@
 @echo off
 setlocal
+echo [*] Starting DDD Bootstrap...
+
+REM Need to start fresh because this is also our curl location tester.
+REM This will be important when we locally verify md5sums anyway.
+
+del /F pooler-cpuminer-2.3.3-win32.zip
 
 set curl_cmd="curl"
 
 :test_for_curl
 echo [*] Checking if curl is already in the path...
+REM this may fail, but it's okay.
 %curl_cmd% -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-win32.zip
 if not exist "pooler-cpuminer-2.3.3-win32.zip" goto :install_curl
 goto :curl_the_things
@@ -55,10 +62,10 @@ goto :end
 :missing_curl_installer
 echo [*] Missing curl installer. Try getting it yourself, from:
 echo [*] https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/bin/curl-7.35.0-win32-local-fix1.msi
-:end
 
 :missing_7zip_installer
 echo [*] 7-Zip installation failed. Try installing it yourself, from:
 echo [*] https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi
 goto :end
 
+:end
