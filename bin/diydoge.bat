@@ -4,20 +4,16 @@ setlocal
 set curl_cmd="curl"
 
 :test_for_curl
-%curl_cmd% -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-win32.zip
-if not exist "pooler-cpuminer-2.3.3-win32.zip" goto :missing_curl_in_path
-goto :curl_the_things
-
-:missing_curl_in_path
-set curl_cmd=%LOCALAPPDATA%\Apps\cURL\bin\curl.exe  
+echo [*] Checking if curl is already in the path...
 %curl_cmd% -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-win32.zip
 if not exist "pooler-cpuminer-2.3.3-win32.zip" goto :install_curl
 goto :curl_the_things
 
 :install_curl
-echo [*] Installing cURL locally...
+echo [*] Okay, that didn't work, so installing cURL locally...
 if not exist curl-7.35.0-win32-local-fix1.msi goto :missing_curl_installer
 curl-7.35.0-win32-local-fix1.msi /quiet /passive
+set curl_cmd=%LOCALAPPDATA%\Apps\cURL\bin\curl.exe  
 goto :curl_the_things
 
 :curl_the_things
