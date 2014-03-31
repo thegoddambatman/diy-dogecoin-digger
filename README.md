@@ -71,7 +71,7 @@ keep your earnings by editing the `p2p.conf` file first. Here's how:
 
 ````
 \curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/bin/ddd.sh
-\curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
+\curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/conf/p2p.conf
 sed -i s/DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g/YOUR-DOGECOIN-WALLET-ADDRESS/ p2p.conf
 bash ./ddd.sh
 ````
@@ -94,8 +94,8 @@ for file transfers, and a scriptable way to unzip files. To take care of that,
 you *may* need to manually download a couple things if you haven't done something
 like this before.
 
-  * [cURL](https://github.com/thegoddambatman/diy-dogecoin-digger/blob/master/bin/curl-7.35.0-win32-local-fix1.msi)
-  * [7zip](https://github.com/thegoddambatman/diy-dogecoin-digger/blob/master/bin/7z920.msi)
+  * [cURL](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/curl-7.35.0-win32-local-fix1.msi)
+  * [7zip](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi)
 
 These are useful anyway so you'll be happy you have them. You may need adminstrative
 permissions to install one or both, though, depending on your local security settings.
@@ -123,7 +123,7 @@ First, get the p2p.conf and the `ddd.bat` batch file:
 
 ````
 curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/bin/ddd.bat
-curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
+curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/conf/p2p.conf
 ````
 
 Edit `p2p.conf` with your favorite editor and replace my "user" (really my wallet address)
