@@ -94,8 +94,8 @@ for file transfers, and a scriptable way to unzip files. To take care of that,
 you *may* need to manually download a couple things if you haven't done something
 like this before.
 
-  * [cURL]()
-  * [7zip]()
+  * [cURL](https://github.com/thegoddambatman/diy-dogecoin-digger/blob/master/bin/curl-7.35.0-win32-local-fix1.msi)
+  * [7zip](https://github.com/thegoddambatman/diy-dogecoin-digger/blob/master/bin/7z920.msi)
 
 These are useful anyway so you'll be happy you have them. You may need adminstrative
 permissions to install one or both, though, depending on your local security settings.
@@ -130,7 +130,7 @@ Edit `p2p.conf` with your favorite editor and replace my "user" (really my walle
 with yours. Be careful to save it as a `p2p.conf` and not `p2p.conf.txt` -- Windows is
 tricky like that.
 
-Then, you're off to the races.
+Now you're off to the races:
 
 ````
 ddd.bat
