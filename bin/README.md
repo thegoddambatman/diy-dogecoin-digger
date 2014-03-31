@@ -32,10 +32,10 @@ Dogecoin is a priority around here.
 
 Some operating systems don't provide helpful tools like command-line downloaders, unarchivers, and the like.
 
-Application  | binary installer                 | source           | md5 checksum
--------------|----------------------------------|------------------|----------------------------------
-7-Zip        | 7z920.msi                        | [ConfusedByCode](http://www.confusedbycode.com/curl/) | 9bd44a22bffe0e4e0b71b8b4cf3a80e2 
-cURL         | curl-7.35.0-win32-local-fix1.msi | [SourceForge](http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/) | 6d343ae45ba615e3604a7ca812e4c274
+Application  | binary installer                 | source           | md5 checksum | VirusTotal Analysis 
+-------------|----------------------------------|------------------|--------------|----------------------
+7-Zip        | 7z920.msi                        | [ConfusedByCode](http://www.confusedbycode.com/curl/) | 9bd44a22bffe0e4e0b71b8b4cf3a80e2 | [VT Clean](https://www.virustotal.com/en/file/ddbe6836f44dda812960d07d987d703a11f4e917cbf7381022f3277c2898960a/analysis/1396187956/)
+cURL         | curl-7.35.0-win32-local-fix1.msi | [SourceForge](http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/) | 6d343ae45ba615e3604a7ca812e4c274 | [VT Clean](https://www.virustotal.com/en/file/aaec926ead509bb2b3962a83a2d8d74dcbfa3de30c2dc7a10e475ff66e59d54f/analysis/1396188014/)
 
 7-Zip is distributed under the 7-Zip License, here: http://7-zip.org/license.txt, and source is available at http://7-zip.org
 
