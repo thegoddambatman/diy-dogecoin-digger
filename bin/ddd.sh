@@ -1,5 +1,4 @@
 #!/bin/bash
-# Usage: ./diydoge.sh
 # Bootstraps and starts the CPU miner, pointing it at doge.st
 
 # Detect local arch. This could be much more thorough. Also this is
