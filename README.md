@@ -59,10 +59,10 @@ late 2006 have 64-bit CPUs, but if you're not sure about yours,
 So, you should be set out of the box. Just open a Terminal window, and type:
 
 ````
-\curl -3sSL http://ur1.ca/gxypf | bash
+\curl -3sSL https://bit.ly/ddd-posix | bash
 ````
 
-#### Avoiding getting ripped off
+#### Avoiding me ripping you off (Posix)
 
 The above will get you started mining right away, but you'll be mining
 to **my** Dogecoin address, not yours. While this seems like a perfectly
@@ -104,12 +104,15 @@ Ask an adult first!
 Once you have those installed, you can pretend like you're on Linux or OSX, and run:
 
 ````
-curl -3sSL https://bit.ly/ddd-win -o ddd.bat && ddd.bat
+curl -3sSL https://bit.ly/ddd-w32 -o ddd.bat && ddd.bat
 ````
 
-Someday, we'll have a nice one-click experince for our Microshibe friends.
+Someday, we'll have a nice one-click experince for our Microshibe friends. Also,
+since it's Windows, 32-bit will work for 64-bit, so don't worry about that;
+there's an [issue](https://github.com/thegoddambatman/diy-dogecoin-digger/issue) open
+to address that soon.
 
-#### Avoiding getting ripped off
+#### Avoiding me ripping you off (Windows)
 
 The above will get you started mining right away, but you'll be mining
 to **my** Dogecoin address, not yours. While this seems like a perfectly
@@ -123,10 +126,11 @@ curl -3sSLO https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digge
 curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf
 ````
 
-Edit `p2p.conf` with your favorite editor. Be careful to save it as a `p2p.conf`
-and not `p2p.conf.txt` (Windows is tricky like that.)
+Edit `p2p.conf` with your favorite editor and replace my "user" (really my wallet address)
+with yours. Be careful to save it as a `p2p.conf` and not `p2p.conf.txt` -- Windows is
+tricky like that.
 
-Then, just as before:
+Then, you're off to the races.
 
 ````
 ddd.bat
