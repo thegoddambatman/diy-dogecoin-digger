@@ -9,7 +9,7 @@ Start digging in your own back yard!
 This project is intended to get users up and running on a CPU miner in
 as fast, secure, and friendly way possible. That means providing
 pre-configured installers that can be automatically run from the command
-line with as little fuss as possible. It also means validating all the
+line with little fuss and no guesswork. It also means validating all the
 provided binaries and scripts with md5sums and keeping everything on
 SSL for download and install.
 
