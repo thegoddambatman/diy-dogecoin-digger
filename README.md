@@ -94,10 +94,10 @@ for file transfers, and a scriptable way to unzip files. To take care of that,
 you *may* need to manually download a couple things if you haven't done something
 like this before.
 
-  * [cURL](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/curl-7.35.0-win32-local-fix1.msi)
-  * [7zip](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi)
+  * [cURL](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/curl-7.35.0-win32-local-fix1.msi) - a crazy useful, multi-protocol data transfer utility. Free and open source.
+  * [7zip](https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi) - a stunningly handy archive manager. Free and open source.
 
-These are useful anyway so you'll be happy you have them. You may need adminstrative
+These are nice to have around anyway so you'll be happy you have them. You may need adminstrative
 permissions to install one or both, though, depending on your local security settings.
 Ask an adult first!
 
