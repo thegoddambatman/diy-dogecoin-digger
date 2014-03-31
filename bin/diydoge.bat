@@ -21,37 +21,31 @@ echo [*] Using %curl_cmd% to fetch binaries...
 %curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/pooler-cpuminer-2.3.3-win32.zip"
 %curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/conf/p2p.conf"
 
-REM Even though we test for 64-bit, it just matters for file paths.
-REM We're not actually using 64-bit for anything. TODO.
-
-if exist "%ProgramFiles(x86)%" goto :64bit
-echo [*] 32-bit system detected...
+:unzip_the_things
+REM This can get confusing, since x86 indicates we are actually on a 64-bit machine.
+REM It'll be important when we actually support the 64-bit CPU miner.
 if exist "%ProgramFiles%\7-zip\7z.exe" goto :unzip_cpuminer
-echo [*] Installing 7-Bit....
+if exist "%ProgramFiles(x86)%\7-zip\7z.exe" goto :unzip_cpuminer_64
+goto :install_7bit
 
+:install_7bit
+echo [*] Fetching 7-Zip...
 %curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi"
 7z920.msi /quiet /passive
+
+if exist "%ProgramFiles%\7-zip\7z.exe" goto :unzip_cpuminer
+if exist "%ProgramFiles(x86)%\7-zip\7z.exe" goto :unzip_cpuminer_64
+goto :missing_7zip_installer
 
 :unzip_cpuminer
 echo [*] Unzipping cpuminer...
 "%ProgramFiles%\7-zip\7z.exe" e -y pooler-cpuminer-2.3.3-win32.zip
 goto :start_miner
 
-:64bit
-
-echo [*] 64-bit detected...
-
-:test_for_7z_64
-if exist "%ProgramFiles%\7-zip\7z.exe" goto :unzip_cpuminer_64
-if exist "%ProgramFiles(x86)%\7-zip\7z.exe" goto :unzip_cpuminer_64
-
-echo [*] Installing 7-Bit....
-%curl_cmd% -3sSLO "https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi"
-7z920.msi /quiet /passive
-
 :unzip_cpuminer_64
 echo [*] Unzipping cpuminer...
 "%ProgramFiles(x86)%\7-zip\7z.exe" e -y pooler-cpuminer-2.3.3-win32.zip
+goto :start_miner
 
 :start_miner
 echo [*] All right, let's get mining!
@@ -59,6 +53,12 @@ minerd -c p2p.conf
 goto :end
 
 :missing_curl_installer
-echo [*] Missing curl installer. Did you download it?
+echo [*] Missing curl installer. Try getting it yourself, from:
 echo [*] https://raw.githubusercontent.com/thegoddambatman/diy-dogecoin-digger/master/bin/curl-7.35.0-win32-local-fix1.msi
 :end
+
+:missing_7zip_installer
+echo [*] 7-Zip installation failed. Try installing it yourself, from:
+echo [*] https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/7z920.msi
+goto :end
+
