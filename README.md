@@ -139,46 +139,114 @@ ddd.bat
 # The Longer Story
 
 So if you've read this far, you may be wondering why I want loads and
-loads of people to start mining on their low-end, non-optimized gear.
-I mean, that's just going to kick up the difficulty rate and cost
-everyone a bunch of electricity, right?
+loads of people to start mining on their low-end, non-optimized, barely
+adequate gear. I mean, that's just going to kick up the difficulty rate
+and cost everyone a bunch of electricity, right?
 
-Well...
+Well... not so fast. There are real, practical reasons to do this.
+If you're used to the profit motives often talked about in cryptocurrency
+circles, you may want to avert your eyes, since I'm going to talk about
+the social good you can perform by sparing a little CPU power.
 
-XXX: Here's where I talk about /u/GoodShibe's post about defending
-dogecoins. Appeal to volunteerism. Admit that CPU mining is tiny but hey
-it's a little something, and a whole bunch of little somethings can lead
-to a big something.
+## Initial musings
 
-http://www.reddit.com/r/dogecoin/comments/21o1k4/of_wolves_and_weasels_day_81_the_grim_reality/
+For a while, I've been worrying myself over the whole fragility of the
+peer-to-peer network that Dogecoin (and all other cryptocurrencies)
+rely on to operate. There was a mild freakout in March of 2014 about
+how [Wafflepool had accumulated over 40% of the total hashing power of the network](http://www.reddit.com/r/dogecoin/comments/210fwh/wafflepool_is_almost_in_position_for_51_attack_on/).
 
-XXX: Here's where I talk about P2P Pools, and doge.st in particular.
-Talk about why these are less evil and more secure than multipools and
-even dedicated Dogecoin pools. Use http://doge.st/ as the example since
-that'll be the default config anyway for the installers.
+The problem is twofold:
+
+  * Multipools tend to mine Dogecoin quickly, then turn around and trade the DOGE for BTC.
+
+These folks don't hold the DOGE, they don't spend the DOGE, and they don't trade for
+goods and services with DOGE. They mine, dump, and mine again. Of course, it's perfectly
+reasonable to do this on an individual basis. You just ending up sucking the life out of the
+coins you mine for your short-term gain. Shrug, right?
+
+  * Pools (multi- or not) tend to concentrate hashing power into very few hands (and machines)
+
+All of the security of a peer-to-peer, distributed currency is predicated on the fact
+that it's actually **peer-to-peer**. This is not the case today. You can usually eyeball
+how the hashrate is divided right now by taking a look at [RapidHash's chart](https://pools.rapidhash.net/).
+In late March, 2014, 10 pools are identified as controlling over **60%** of the hashrate.
+
+Are the controllers of these pools all going to suddenly start colluding, like so many
+monocoled and cigar-smoking [robber barons](https://en.wikipedia.org/wiki/Robber_baron_(industrialist))?
+Probably not. But how probably? 99%? 98%? Is it any better that it would only take the top six pools
+to cover over 51% of the hashrate?
+
+Let's assume the controllers of these pools -- every person who knows a password or holds a key to
+a critical service on these pools -- are pure of heart. Even if they have the most excellent
+of intentions, I would bet they're not immune to getting hacked. It happens, and it happens over
+and over again on young sites caught up in racing to meet performance and bandwidth demands.
+
+Many people are familiar with the chaos caused when cryptocurrency exchanges go bad, since they
+control such a large percentage of the coins already extant, and of course, they do go bad from
+time to time, at various levels of fault. Imagine what happens when the network itself goes bad.
+
+So, let's try to mitigate against that.
+
+## Enter the P2Pools
+
+This project defaults to setting up a CPU miner to contribute its proof-of-work to a proper peer-to-peer
+pool, [Doge.st](http://doge.st). These kinds of pools are usually referred to as a P2Pool, and Doge.st
+is one of several sub-pools (which itself is P2P). The crucial bit is that P2Pool (and the proxies)
+promote **decentralization**, while traditional and multipools promote **centralization**.
+
+You are more than welcome to read the write up at the [BitCoin wiki](https://en.bitcoin.it/wiki/P2Pool) as well
+as /u/Verrok's [introductory Reddit post](http://www.reddit.com/r/dogecoin/comments/1ypd7w/hey_rdogecoin_check_it_out_ive_wrote_a_mining/) to figure
+out how all that works. They explain it way better than I can.
+
+Oh, and since the payouts on these pools is generally pretty consistent, you're not really sacrificing much
+if you were already mining with one of the multipools or doge-centric pools.
+
+## [GoodShibe's](http://reddit.com/u/GoodShibe) Post
+
+Finally, the real reason why I stopped worrying and learned to love the CPU miner is
+GoodShibe's post, [Of Wolves and Weasels, Day 81](http://www.reddit.com/r/dogecoin/comments/21o1k4/of_wolves_and_weasels_day_81_the_grim_reality/), which, to
+me, pretty much reads like [St. Crispin's Day](https://en.wikipedia.org/wiki/St._Crispin%27s_Day_Speech) 
+style call to action. Therefore, in answer to his call to action, I put this together.
+
+Let's make it easy to drop CPU miners everywhere, have them all throwing in on a peer-to-peer sharechain,
+and drive down the influence of the pooled miners. That's my take, anyway.
+
+See, I told you this was a long and boring story. You should have gotten a snack.
 
 # Next steps
 
-XXX: Here's where I talk about compiling and optimizing CPUMiner.
+Now, I try to make this all easy so you don't have to do a whole lot but
+stab at some keys. You got your compiled binaries (non-nerds might call
+them "programs" or "apps") in a reasonably secure way. However, if this
+is all just too easy for you, you are invited to go and compile cpuminer
+straight from the source:
 
 https://github.com/pooler/cpuminer
 
-XXX: Here's where I talk about the next step: GPU mining. That's a whole
-other can of worms, even more expensive, but also even more fun. I'm
-totally unqualified to talk about that right now, though.
+However, that kind of thing is beyond this "Total Noobs Guide" getting
+started thing. All I care about is that lots of people mine. I don't
+super care about any one individual's hashrate, assuming he doesn't
+hog all the rocket juice for himself.
 
-# Recruit contributors
+# Contribute!
 
-XXX: Here's where I talk about open source projects that are one-man
-shows rarely last, and there are way smarter people than me about this
-sort of stuff. Also, talk up the
-[wiki](https://github.com/thegoddambatman/diy-dogecoin-digger/wiki/_pages).
+In the grand scheme of Dogecoin, this is a pretty minor project.
+But, open source things like this often end up being a one man
+show, and that's a sure way to turn into abandonware in six months.
+
+The fact is, there are way smarter people than me out there, with all
+kinds of useful experience and knowledge. If you want contributor rights,
+and I have some way of verifying that you are a trustworthy sort that's
+not going to go backdoor all those noob shibes coming here, feel free to
+e-mail me or hit me up on [Reddit](http://reddit.com/u/thegoddambatman).
 
 # Tipjar
 
+![Tipjar](http://i.imgur.com/ehUkOjO.png)
+
 Of course, it's not a proper cryptocurrency project unless you leave out a tip jar. Here's mine:
 
-[DFRVFASJ5U2qgLDG9rsjYdiooJoWRwtaQK](http://dogechain.info/address/DFRVFASJ5U2qgLDG9rsjYdiooJoWRwtaQK)
+[DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g](http://dogechain.info/address/DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g)
 
-I should probably get something fancier, but hey.
-
+You'll note it's the same as the default address in these one-line installers. You
+can check to see how this whole plot is working out on [doge.st](http://doge.st/serverstats#DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g).
