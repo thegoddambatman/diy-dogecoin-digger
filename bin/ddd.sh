@@ -33,7 +33,7 @@ fi
 echo [*] Fetching binary CPU miner
 curl -3sSLO https://github.com/thegoddambatman/diy-dogecoin-digger/raw/master/bin/$MINERD_BUNDLE
 
-if [ -e $PWD/p2p.con ]; then
+if [ -e $PWD/p2p.conf ]; then
   echo [*] Using existing p2p.conf
 else
   echo [*] Fetching p2p.conf
