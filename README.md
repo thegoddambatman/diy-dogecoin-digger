@@ -7,15 +7,15 @@ Start digging in your own back yard!
 ## CPU Mining for the Masses!
 
 This project is intended to get users up and running on a CPU miner in
-as fast, secure, and friendly way possible. That means providing
+a **fast, secure, and friendly way**. First, that means providing
 pre-configured installers that can be automatically run from the command
 line with little fuss and no guesswork. It also means validating all the
 provided binaries and scripts with md5sums and keeping everything on
 SSL for download and install.
 
-Mass CPU mining is important to the future of Dogecoin, if you can spare
+Mass individual mining is important to the future of Dogecoin, if you can spare
 the cycles and electrons. If you're interested in some of the reasons,
-feel free to read on or [skip ahead](https://github.com/thegoddambatman/diy-dogecoin-digger#the-longer-story). Otherwise...
+feel free to [skip ahead](https://github.com/thegoddambatman/diy-dogecoin-digger#the-longer-story). Otherwise...
 
 ## TL;DR!
 
