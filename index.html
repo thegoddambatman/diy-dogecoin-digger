@@ -32,54 +32,15 @@
 <h2>
 <a name="cpu-mining-for-the-masses" class="anchor" href="#cpu-mining-for-the-masses"><span class="octicon octicon-link"></span></a>CPU Mining for the Masses!</h2>
 
-<p>This project is intended to get users up and running on a CPU miner in
-as fast, secure, and friendly way possible. That means providing
-pre-configured installers that can be automatically run from the command
-line with little fuss and no guesswork. It also means validating all the
-provided binaries and scripts with md5sums and keeping everything on
-SSL for download and install.</p>
-
 <p>Mass CPU mining is important to the future of Dogecoin, if you can spare
 the cycles and electrons. If you're interested in some of the reasons,
-feel free to read on or <a href="https://github.com/thegoddambatman/diy-dogecoin-digger#the-longer-story">skip ahead</a>. Otherwise...</p>
-
-<h2>
-<a name="tldr" class="anchor" href="#tldr"><span class="octicon octicon-link"></span></a>TL;DR!</h2>
-
-<p>Oh, I get it, you're the sort who doesn't care about details. You just want
-to be helpful. I respect that. After all, who has the time? Here's what you
-need to do to start digging some Dogecoin with a P2P pool and help protect
-the Dogecoin network, right now.</p>
-
-<h3>
-<a name="step-one-get-a-wallet" class="anchor" href="#step-one-get-a-wallet"><span class="octicon octicon-link"></span></a>Step One: Get a Wallet</h3>
-
-<p>If you have a wallet, great, just skip ahead to the <a href="https://github.com/thegoddambatman/diy-dogecoin-digger#d%C3%90d-on-linux-and-osx">Linux/OSX method</a>
-or the <a href="https://github.com/thegoddambatman/diy-dogecoin-digger#d%C3%90d-on-microsoft-windows">Windows procedure</a>.</p>
-
-<p><img src="http://i.imgur.com/SdFtBtgs.png" alt="Multidoge"></p>
-
-<p>If you don't have a Dogecoin wallet yet, then might I suggest the
-<a href="http://multidoge.org/">MultiDoge</a> wallet? It's easy and fun, cross-platform,
-allows for removable keys on a USB drive, and you don't have to wait for days
-for the network to sync.</p>
-
-<p>To verify your download, check against the md5 hashes, here:</p>
-
-<pre><code>a5788daf3b58b6a5efa222db9fd05367  multidoge-0.1.2.dmg
-a9484de0a99ada77ebd0118a33708c72  multidoge-0.1.2-linux.jar
-5083cb4f664cf3a62af292e54978ee39  multidoge-0.1.2-windows-setup.exe
-</code></pre>
-
-<p>Unfamiliar with md5sums? <a href="https://help.ubuntu.com/community/HowToMD5SUM">No problem</a>!</p>
-
-<p>There are many other choices in your quest for a Dogecoin address. Feel free
-to shop around.</p>
+feel free <a href="https://github.com/thegoddambatman/diy-dogecoin-digger">bop over to the README and
+hear the long and somewhat boring story of the whys and wherefores.
 
 <h3>
 <a name="step-two-start-digging-already" class="anchor" href="#step-two-start-digging-already"><span class="octicon octicon-link"></span></a>Step Two: Start digging already!</h3>
 
-<p>Now that you have a wallet, pick your operating system, and follow the
+<p>Assuming you have a wallet, pick your operating system, and follow the
 very simple instructions to get started. You can choose Linux/OSX,
 Windows, Raspbian (some day), or Android (some other day).</p>
 
@@ -177,103 +138,6 @@ tricky like that.</p>
 </code></pre>
 
 <h1>
-<a name="the-long-and-kind-of-boring-story" class="anchor" href="#the-long-and-kind-of-boring-story"><span class="octicon octicon-link"></span></a>The Long and Kind of Boring Story</h1>
-
-<p>So if you've read this far, you may be wondering why I want loads and
-loads of people to start mining on their low-end, non-optimized, barely
-adequate gear. I mean, that's just going to kick up the difficulty rate
-and cost everyone a bunch of electricity, right?</p>
-
-<p>Well... not so fast. There are real, practical reasons to do this.
-If you're used to the profit motives often talked about in cryptocurrency
-circles, you may want to avert your eyes, since I'm going to talk about
-the social good you can perform by sparing a little CPU power.</p>
-
-<h2>
-<a name="initial-musings" class="anchor" href="#initial-musings"><span class="octicon octicon-link"></span></a>Initial musings</h2>
-
-<p>For a while, I've been worrying myself over the whole fragility of the
-peer-to-peer network that Dogecoin (and all other cryptocurrencies)
-rely on to operate. There was a mild freakout in March of 2014 about
-how <a href="http://www.reddit.com/r/dogecoin/comments/210fwh/wafflepool_is_almost_in_position_for_51_attack_on/">Wafflepool had accumulated over 40% of the total hashing power of the network</a>.</p>
-
-<p>The problem is twofold:</p>
-
-<ul>
-<li>Multipools tend to mine Dogecoin quickly, then turn around and trade the DOGE for BTC.</li>
-</ul><p>These folks don't hold the DOGE, they don't spend the DOGE, and they don't trade for
-goods and services with DOGE. They mine, dump, and mine again. Of course, it's perfectly
-reasonable to do this on an individual basis. You just ending up sucking the life out of the
-coins you mine for your short-term gain. Shrug, right?</p>
-
-<ul>
-<li>Pools (multi- or not) tend to concentrate hashing power into very few hands (and machines)</li>
-</ul><p>All of the security of a peer-to-peer, distributed currency is predicated on the fact
-that it's actually <strong>peer-to-peer</strong>. This is not the case today. You can usually eyeball
-how the hashrate is divided right now by taking a look at <a href="https://pools.rapidhash.net/">RapidHash's chart</a>.
-In late March, 2014, 10 pools are identified as controlling over <strong>60%</strong> of the hashrate.</p>
-
-<p>Are the controllers of these pools all going to suddenly start colluding, like so many
-monocoled and cigar-smoking <a href="https://en.wikipedia.org/wiki/Robber_baron_(industrialist)">robber barons</a>?
-Probably not. But how probably? 99%? 98%? Is it any better that it would only take the top six pools
-to cover over 51% of the hashrate?</p>
-
-<p>Let's assume the controllers of these pools -- every person who knows a password or holds a key to
-a critical service on these pools -- are pure of heart. Even if they have the most excellent
-of intentions, I would bet they're not immune to getting hacked. It happens, and it happens over
-and over again on young sites caught up in racing to meet performance and bandwidth demands.</p>
-
-<p>Many people are familiar with the chaos caused when cryptocurrency exchanges go bad, since they
-control such a large percentage of the coins already extant, and of course, they do go bad from
-time to time, at various levels of fault. Imagine what happens when the network itself goes bad.</p>
-
-<p>So, let's try to mitigate against that.</p>
-
-<h2>
-<a name="enter-the-p2pools" class="anchor" href="#enter-the-p2pools"><span class="octicon octicon-link"></span></a>Enter the P2Pools</h2>
-
-<p>This project defaults to setting up a CPU miner to contribute its proof-of-work to a proper peer-to-peer
-pool, <a href="http://doge.st">Doge.st</a>. These kinds of pools are usually referred to as a P2Pool, and Doge.st
-is one of several sub-pools (which itself is P2P). The crucial bit is that P2Pool (and the proxies)
-promote <strong>decentralization</strong>, while traditional and multipools promote <strong>centralization</strong>.</p>
-
-<p>You are more than welcome to read the write up at the <a href="https://en.bitcoin.it/wiki/P2Pool">BitCoin wiki</a> as well
-as /u/Verrok's <a href="http://www.reddit.com/r/dogecoin/comments/1ypd7w/hey_rdogecoin_check_it_out_ive_wrote_a_mining/">introductory Reddit post</a> to figure
-out how all that works. They explain it way better than I can.</p>
-
-<p>Oh, and since the payouts on these pools is generally pretty consistent, you're not really sacrificing much
-if you were already mining with one of the multipools or doge-centric pools.</p>
-
-<h2>
-<a name="goodshibes-post" class="anchor" href="#goodshibes-post"><span class="octicon octicon-link"></span></a><a href="http://reddit.com/u/GoodShibe">GoodShibe's</a> Post</h2>
-
-<p>Finally, the real reason why I stopped worrying and learned to love the CPU miner is
-GoodShibe's post, <a href="http://www.reddit.com/r/dogecoin/comments/21o1k4/of_wolves_and_weasels_day_81_the_grim_reality/">Of Wolves and Weasels, Day 81</a>, which, to
-me, pretty much reads like <a href="https://en.wikipedia.org/wiki/St._Crispin%27s_Day_Speech">St. Crispin's Day</a> 
-style call to action. Therefore, in answer to his call to action, I put this together.</p>
-
-<p>Let's make it easy to drop CPU miners everywhere, have them all throwing in on a peer-to-peer sharechain,
-and drive down the influence of the pooled miners. That's my take, anyway.</p>
-
-<p>See, I told you this was a long and boring story. You should have gotten a snack.</p>
-
-<h1>
-<a name="next-steps" class="anchor" href="#next-steps"><span class="octicon octicon-link"></span></a>Next steps</h1>
-
-<p>Now, I try to make this all easy so you don't have to do a whole lot but
-stab at some keys. You got your compiled binaries (non-nerds might call
-them "programs" or "apps") in a reasonably secure way. However, if this
-is all just too easy for you, you are invited to go and compile cpuminer
-straight from the source:</p>
-
-<p><a href="https://github.com/pooler/cpuminer">https://github.com/pooler/cpuminer</a></p>
-
-<p>However, that kind of thing is beyond this "Total Noobs Guide" getting
-started thing. All I care about is that lots of people mine. I don't
-super care about any one individual's hashrate, assuming he doesn't
-hog all the rocket juice for himself.</p>
-
-<h1>
 <a name="contribute" class="anchor" href="#contribute"><span class="octicon octicon-link"></span></a>Contribute!</h1>
 
 <p>In the grand scheme of Dogecoin, this is a pretty minor project.
@@ -285,6 +149,11 @@ kinds of useful experience and knowledge. If you want contributor rights,
 and I have some way of verifying that you are a trustworthy sort that's
 not going to go backdoor all those noob shibes coming here, feel free to
 e-mail me or hit me up on <a href="http://reddit.com/u/thegoddambatman">Reddit</a>.</p>
+
+<p>You are welcome to just dive in, of course. The wiki is open and I love getting
+pull requests. Scoot on over to the <a href="https://github.com/thegoddambatman/diy-dogecoin-digger">GitHub</a> repo
+to start your long and storied career as a Dogecoin hacker.
+</p>
 
 <h1>
 <a name="tipjar" class="anchor" href="#tipjar"><span class="octicon octicon-link"></span></a>Tipjar</h1>
@@ -300,7 +169,7 @@ falling for the default wallet address trick, you can keep tabs on my apparent h
 the way. I just don't have a good way to do it yet.</p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a>. Woof!</p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
