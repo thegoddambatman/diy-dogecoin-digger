@@ -53,7 +53,7 @@ to shop around.
 
 Now that you have a wallet, pick your operating system, and follow the
 very simple instructions to get started. You can choose Linux/OSX,
-Windows (soon), Raspbian (some day), or Android (some other day).
+Windows, Raspbian (soon), or Android (some day).
 
 ## DÐD on Linux and OSX
 
