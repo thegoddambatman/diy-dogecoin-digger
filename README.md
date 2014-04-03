@@ -36,14 +36,7 @@ If you don't have a Dogecoin wallet yet, then might I suggest the
 allows for removable keys on a USB drive, and you don't have to wait for days
 for the network to sync.
 
-To verify your download, check against the md5 hashes, here:
-
-````
-a5788daf3b58b6a5efa222db9fd05367  multidoge-0.1.2.dmg
-a9484de0a99ada77ebd0118a33708c72  multidoge-0.1.2-linux.jar
-5083cb4f664cf3a62af292e54978ee39  multidoge-0.1.2-windows-setup.exe
-````
-
+To verify your download, check against the [published md5 hashes](https://github.com/langerhans/multidoge/blob/develop/multidoge-0.1.2-bins.md5).
 Unfamiliar with md5sums? [No problem](https://help.ubuntu.com/community/HowToMD5SUM)!
 
 There are many other choices in your quest for a Dogecoin address. Feel free
