@@ -25,6 +25,8 @@ you will want to create an exception around the folder you plan to put
 them in. I suggest excepting something obvious like "C:\Users\name\ddd"
 or somesuch.
 
+Again, all these binaries are [from SourceForge](http://sourceforge.net/projects/cpuminer/files/),
+and they're here to ensure continuing availability.
 
 cpuminer bundle                            | build date | md5 checksum                     | VirusTotal
 -------------------------------------------|------------|----------------------------------|--------------------------------
