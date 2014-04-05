@@ -62,7 +62,7 @@ late 2006 have 64-bit CPUs, but if you're not sure about yours,
 So, you should be set out of the box. Just open a Terminal window, and type:
 
 ````
-\curl -3sSL https://bit.ly/ddd-posix > ddd.sh && bash ddd.sh
+curl -3sSL https://bit.ly/ddd-posix > ddd.sh && bash ddd.sh
 ````
 
 #### Avoiding me ripping you off (Posix)
