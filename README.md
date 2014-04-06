@@ -1,4 +1,5 @@
-# Do-It-Yourself Ðogecoin Digger (DÐD)
+# Do-It-Yourself Ðogecoin Digger ([DÐD](http://bit.ly/diy-doge))
+
  
 Start digging in your own back yard!
 
@@ -242,6 +243,12 @@ kinds of useful experience and knowledge. If you want contributor rights,
 and I have some way of verifying that you are a trustworthy sort that's
 not going to go backdoor all those noob shibes coming here, feel free to
 e-mail me or hit me up on [Reddit](http://reddit.com/u/thegoddambatman).
+
+All that said, the best thing you could do for the project is to scrawl
+the bit.ly link places that are interested in Dogecoing, CPU mining,
+and security:
+
+http://bit.ly/diy-doge
 
 # Tipjar
 
