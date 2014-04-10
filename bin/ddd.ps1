@@ -1,4 +1,4 @@
-��#Requires -Version 3
+#Requires -Version 3
 
 # Requires 3.0, because of Invoke-WebRequest. Using WebClient.DownloadFile is pointless because of the way this script is supposed to be launched. If not for Invoke-WebRequest, 1.0 seems to be enough.
 
