@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bootstraps and starts the CPU miner, pointing it at doge.st
+# Bootstraps and starts the CPU miner, pointing it at PandaPool
 
 # Detect local arch. This could be much more thorough. Also this is
 # assuming 'uname -m' is universal, and will of course fall over if
@@ -63,7 +63,7 @@ rm $MINERD_BUNDLE
 P2P_WALLET=$(grep \"user\" $PWD/p2p.conf | cut -f 2 -d ":" | sed s/[\ \",]//g)
 
 echo [*] "Let's dig some Ðogecoin!"
-echo [*] "Check status at http://doge.st/serverstats#$P2P_WALLET"
+echo [*] "Check status at http://multi.pandapool.info/#mystats"
 echo [*] "To quit, just type 'killall minerd'"
 
 # TODO: Pick up wallet address automatically from p2p.conf so we can

@@ -187,12 +187,24 @@ time to time, at various levels of fault. Imagine what happens when the network 
 
 So, let's try to mitigate against that.
 
-## Enter the P2Pools
+## Enter the Multipools
 
-This project defaults to setting up a CPU miner to contribute its proof-of-work to a proper peer-to-peer
-pool, [Doge.st](http://doge.st). These kinds of pools are usually referred to as a P2Pool, and Doge.st
-is one of several sub-pools (which itself is P2P). The crucial bit is that P2Pool (and the proxies)
-promote **decentralization**, while traditional and multipools promote **centralization**.
+This project defaults to setting up a CPU miner to contribute its
+proof-of-work to an anonymous multipool,
+[PandaPool](http://multi.pandapool.info/#support). You're of course,
+welcome to use whatever pool you like, but these days, Panda is nice for
+no-registration-required mining.
+
+## What about the P2Pool?
+
+This project *used* to mine to a peer-to-peer pool,
+[Doge.st](http://doge.st). Sadly, Doge.st announced they were closing
+down, and a suitable replacement hasn't been found yet.
+
+These kinds of pools are usually referred to as a P2Pool, and Doge.st is
+one of several sub-pools (which itself is P2P). The crucial bit is that
+P2Pool (and the proxies) promote **decentralization**, while traditional
+and multipools promote **centralization**.
 
 You are more than welcome to read the write up at the [BitCoin wiki](https://en.bitcoin.it/wiki/P2Pool) as well
 as /u/Verrok's [introductory Reddit post](http://www.reddit.com/r/dogecoin/comments/1ypd7w/hey_rdogecoin_check_it_out_ive_wrote_a_mining/) to figure
@@ -249,5 +261,7 @@ Of course, it's not a proper cryptocurrency project unless you leave out a tip j
 [DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g](http://dogechain.info/address/DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g)
 
 You'll note it's the same as the default address in these one-line installers. If people really are
-falling for the default wallet address trick, you can keep tabs on my apparent hashrate on [doge.st](http://doge.st/serverstats#DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g). I promise to fix that, by
+falling for the default wallet address trick, you can keep tabs on my
+apparent hashrate on [PandaPool](http://multi.pandapool.info/#mystats)
+-- just plug in **DLkmYda7gQ7U4pxQZbyJtkpnCxYrvDWa7g*. I promise to fix that, by
 the way. I just don't have a good way to do it yet.
