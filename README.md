@@ -30,15 +30,9 @@ the Dogecoin network, right now.
 If you have a wallet, great, just skip ahead to the [Linux/OSX method](https://github.com/thegoddambatman/diy-dogecoin-digger#d%C3%90d-on-linux-and-osx)
 or the [Windows procedure](https://github.com/thegoddambatman/diy-dogecoin-digger#d%C3%90d-on-microsoft-windows).
 
-![Multidoge](http://i.imgur.com/SdFtBtgs.png)
-
 If you don't have a Dogecoin wallet yet, then might I suggest the
-[MultiDoge](http://multidoge.org/) wallet? It's easy and fun, cross-platform,
-allows for removable keys on a USB drive, and you don't have to wait for days
-for the network to sync.
-
-To verify your download, check against the [published md5 hashes](https://github.com/langerhans/multidoge/blob/develop/multidoge-0.1.2-bins.md5).
-Unfamiliar with md5sums? [No problem](https://help.ubuntu.com/community/HowToMD5SUM)!
+[Coinomi](https://www.coinomi.com/) wallet? It's easy, fun, and cross-platform,
+and you don't have to wait for days for the network to sync.
 
 There are many other choices in your quest for a Dogecoin address. Feel free
 to shop around.
